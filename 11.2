@@ -1,0 +1,5 @@
+a = input("Введите предложение: ")
+words = a.split()
+processed_words = [word[::-1] for i, word in enumerate(words) if (i + 1) % 2 == 0]
+result = ' '.join(processed_words)
+print("Результат:", result)
